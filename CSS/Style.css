@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header, nv, main, footer{
+    width: 100%;
+    padding: 30px;
+    background-color: #F5ECD5;
+    color: #3D3D3D;
+}
+header,footer{
+    text-align: center;
+    font-size: 48px;
+    
+}
+nav{
+    background-color: #578E7E;
+        height: auto;
+}
+main{
+    height: auto;
+    background-color: #3D3D3D;
+    color: #FFFAEC;
+    padding: 10px;
+}
+nav ul{
+    text-align: center;
+   
+}
+nav ul li{
+    width: 10%;
+    min-width: 100px;
+    height: 60px;
+    background-color: #FFFAEC;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+}
+nav ul li:hover{
+    background-color: #578E7E;
+}
+section{
+    width: 70%;
+    height: auto;
+    background-color: #578E7E;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: #FFFAEC;
+}
+p{
+    margin-top: 20px;
+    
+}
+h1{
+    font-family: "Carter One", serif;
+}
+h2{
+    color: #F5ECD5;
+}
+img{
+    width: 50%;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#img_gif{
+    width: 30%;
+    border-radius: 50%;
+}
+.img_float{
+    width: 20%;
+    min-width: 10%;
+}
+#img_izq{
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+}
+#img_der{
+    float: right;
+}
+#img_ico{
+    width: 64px;
+    height: auto;
+    margin-right: 0;
+}
+#fondo{
+    height: 800px;
+    background-image: url("../Images/love-792102_640.jpg");
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+video, iframe{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+.box_videos{
+    text-align: center;
+}
+
+.box_videos section{
+    height: 500px;
+    overflow-y: auto;
+    width: 40%;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    min-width: 360px;
+}
+.box_videos section p{
+    text-align: justify;
+}
+form{
+    width: 50%;
+    background-color: #FFFAEC;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #578E7E;
+    margin-top: 30px;
+    border-radius: 10px;    
+}
+input[type=text],input[type=password], input[type=date], input[type=email],input[type=tel]{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background-color: #3D3D3D;
+    color: #FFFAEC;
+    border: 5px solid #578E7E;
+    border-radius: 10px;
+}
+input[type=text]:focus,input[type=password]:focus,input[type=date]:focus, input[type=email]:focus,input[type=tel]:focus{
+    background-color: #FFFAEC;
+    color: #578E7E;
+    font-weight: bolder;
+    border: 5px solid #3D3D3D;
+}
+input[type=color]{
+    width: 100%;
+}
+label{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+}
+input[type=submit]{
+    width: 20%;
+    min-width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    background-color: #578E7E;
+    color: #FFFAEC;
+    font-size: bolder;
+    border-radius: 10px;
+}

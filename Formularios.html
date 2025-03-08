@@ -1,0 +1,135 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formularios</title>
+        <link rel="stylesheet" href="css/Style.css" type="text/css">
+    </head> 
+    <body>
+        <header>
+           <div> <a href="index.html"><img style="width: 32px; aling:center" src="Images/hogar.png"></a></div>
+            <h1>Formularios</h1>
+        </header>
+        <nav>
+               <ul>
+               <li><a href="Trejo%20Bautista%20Tamara-%20Formatos%20de%20texto.html">Formatos</a></li>
+               <li><a href="Listas.html">Listas</a></li>
+               <li><a href="enlaces.html">Enlaces</a></li>
+               <li><a href="Tablas.html">Tablas</a></li>
+               <li><a href="Imagenes.html">Imagenes</a></li>
+               <li><a href="Audios.html">Audios</a></li>
+               <li><a href="Videos.html">Video</a></li>
+               <li><a href="Formularios.html">Formulario</a></li>
+           </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Formulario</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laboriosam aspernatur dolores natus quaerat labore quae, deleniti ab alias vitae animi vel sit, sapiente a qui at! Commodi dolore beatae dolor deserunt ipsa culpa explicabo itaque, quis quos voluptatum fugiat quod similique accusantium quas, autem corporis nemo tenetur pariatur! Non aperiam eligendi aspernatur illum consectetur aliquam optio similique quidem at aut ullam beatae, quia distinctio modi ad impedit nesciunt incidunt sit quis excepturi iste tempore sint quibusdam explicabo. Minus ad reiciendis modi iste aliquam soluta corporis quidem sapiente? Repellat excepturi quidem inventore, veritatis iste nemo ratione ab repudiandae nostrum possimus!</p>
+                <form action="" method="get">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" value="Tamara">
+                    <label for="contrasena">Contrasena</label>
+                    <input type="password" id="contrasena" name="contrasena" value="123456">
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <section>
+                <h2>Formulario</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptatem reiciendis ab fugiat soluta. Itaque magni id nam similique sed facere corrupti eveniet, ipsum accusamus exercitationem hic saepe veniam reprehenderit non nemo vel repudiandae, molestiae officia. Rerum reiciendis tenetur cupiditate voluptatem nesciunt eveniet deserunt, nam minima adipisci doloremque, esse in corporis consectetur, dicta obcaecati. Sequi maiores nobis, ullam dolorem veritatis, at labore voluptate provident aperiam in sint tempore, cupiditate aliquam eos illo pariatur aliquid natus suscipit! Minus a quo blanditiis consectetur eveniet distinctio fuga, voluptas, rerum deserunt laborum saepe cumque similique. Adipisci nihil, amet illum odio esse, dicta laudantium ut?</p>
+                <form>
+                  <label for="color">Selecciona el color de tu prenda:</label>
+                  <input type="color" id="color" name="color" value="#ff0000">
+            
+                  <label for="entrega">Seleccione la fecha de entrega:</label>
+                  <input type="date" id="entrega" name="entrega">
+                  
+                  <label for="email">Ingresa tu e-mail:</label>
+                  <input type="email" id="email" name="email">
+                  
+                  <label for="myfile">Envia tu comprobante de domicilio en pdf:</label>
+                  <input type="file" id="myfile" name="myfile">
+                  
+                  
+                  <label for="phone">Ingresa tu numero de telefono:</label>
+                  <p>Se utilizara para contactarlo cuando llegue su pedido:</p>
+                  <input type="tel" id="phone" name="phone" placeholder="123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                  <small>Formato: 123-456-7891</small><br><br>
+                  <input type="submit" value="enviar">
+
+                
+                </form>
+            </section>
+            <section>
+                <h2>Formulario</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis officiis, ipsam maiores, deleniti cupiditate, obcaecati, similique id ratione eum suscipit blanditiis? Repellat rerum provident laborum molestiae harum delectus aliquam nulla sit et reiciendis, perferendis hic doloribus a voluptates accusantium praesentium veniam aut omnis, ipsum placeat quisquam temporibus! Placeat numquam delectus debitis excepturi assumenda impedit facere architecto. Aliquam, quas, laborum! Dignissimos iure, non! Molestiae sequi nisi incidunt autem officiis, alias, similique, fuga quod adipisci sint ipsa aspernatur, et ducimus minus? Provident, incidunt suscipit porro fugiat explicabo eaque dolore quibusdam esse excepturi alias ex, aspernatur ipsa facilis cum aliquam in saepe enim.</p>
+                <form action="" method="get">
+                    <label for="name-1">Nombre</label>
+                    <input type="text" id="name-1" name="name-1" value="">
+                    <label for="pais">Pais</label>
+                    <select id="pais" name="pais">
+                        <option value="ar">Argentina</option>
+                    <option value="co">Colombia</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="mx">Mexico</option>
+                    <option value="it">Italia</option>
+                    <option value="es">España</option>
+                    </select>
+                    <label for="genero">Genero:</label>
+                    <input type="radio" id="fem" name="genero" value="fem">
+                    <label for="fem">Femenino</label>
+                    <input type="radio" id="mas" name="genero" value="mas">
+                    <label for="mas">Masculino</label>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label>
+                    
+                    <label for="music">¿Cual es tu genero musical favorito?</label>
+                    <input type="checkbox" id="music-1" name="music-1" value="pop">
+                    <label for="music-1" >Pop</label>
+                    <input type="checkbox" id="music-2" name="music-2" value="rock">
+                    <label for="music-2">Rock</label>
+                    <input type="checkbox" id="music-3" name="music-3" value="jazz-blues">
+                    <label for="music-3">Jazz-Blues</label>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+            <section>
+                <h2>Formulario</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere earum labore sit veniam at hic soluta nam doloremque explicabo architecto, corporis maxime aliquid tempore ea, quod odit perspiciatis a alias error natus provident eligendi dolor. Accusantium ipsum laborum perspiciatis tenetur incidunt omnis temporibus quam accusamus consequuntur commodi. Nesciunt perferendis distinctio explicabo perspiciatis aut, iure possimus id dolores, eos reiciendis, voluptatibus soluta atque. Molestiae dolorem eaque enim quae suscipit minima sed esse earum amet animi voluptas voluptatibus vero, asperiores, iure fugiat. Fugit unde, sunt libero corrupti nostrum atque, rerum aperiam recusandae esse, porro corporis nemo blanditiis amet officia ea, fugiat ullam.</p>
+                
+                <form action="" method="get">
+                    <label for="namem-1">Nombre de tu perro</label>
+                    <input type="text" id="namem-1" name="namem-1" value="">
+                    <label for="raza">Raza</label>
+                    <select id="raza" name="raza">
+                        <option value="ak">Akita AMericano</option>
+                        <option value="al">Alabai</option>
+                        <option value="fi">Fila Brasileño</option>
+                        <option value="gr">Gran Danes</option>
+                        <option value="ka">Kangal</option>
+                        <option value="la">Labrador</option>
+                    </select>
+                    <label for="genero">Genero:</label>
+                    <input type="radio" id="hem" name="genero" value="hem">
+                    <label for="hem">Hembra</label>
+                    <input type="radio" id="mac" name="genero" value="mac">
+                    <label for="mac">Macho</label>
+                    
+                    
+                    <label for="activ">¿Cual es su actividad favorita para hacer juntos?</label>
+                    <input type="checkbox" id="activ-1" name="activ-1" value="casa">
+                    <label for="activ-1" >Actividades en casa</label>
+                    <input type="checkbox" id="activ-2" name="activ-2" value="parque">
+                    <label for="activ-2">Ir al parque</label>
+                    <input type="checkbox" id="activ-3" name="activ-3" value="alberca">
+                    <label for="activ-3">Ir a nadar juntos</label>
+                    <label for="appt">Selecciona la hora en la que suelen hacer esas actividades</label>
+                    <input type="time" id="appt" name="appt">
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h6>Elaborado por Tamara Trejo Bautista</h6>
+        </footer>
+    </body>
+</html>

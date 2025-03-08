@@ -1,0 +1,485 @@
+<!-- Trejo BautistaTamara  202163406
+Facultad de Arquitectura 
+Colegio de Diseño Grafico 
+Diseño de interfaces Graficas de Usuario -->
+<html>
+    <head>
+        <title>Tablas en thml</title> 
+        <style type="text/css"> 
+        *{
+            padding: 0; 
+            margin: 0;
+            box-sizing: border-box;
+        } 
+        header,nav, main, footer{ 
+            width:100%;  
+            color: bisque; 
+            padding: 30px; 
+            
+        }
+            header{
+                height: 100px;
+                background-color: brown;
+                color: bisque;   
+            }
+            nav{
+               height: auto;
+                background-color: saddlebrown;
+            }
+            main{
+                height: auto;
+                background-color: sandybrown;
+            }
+            footer{
+                height: 60px;
+                background-color: saddlebrown;
+            }
+            section{
+                width: 70%;
+                height: auto;
+                background-color: bisque;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                color: brown;
+                padding: 30px;
+                overflow: auto;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+            header, footer{
+                text-align: center;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 10%;
+                background-color: sandybrown;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10 px;
+                list-style-type: none;
+                padding: 10px;
+                display: inline-block;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+            table{
+                background-color: crimson;
+            }
+            #tab_buap{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;
+                
+            }
+            #tab_buap th{
+                background-color: cadetblue;
+                color: aliceblue;
+                height: 50px;
+            }
+            #tab_buap td{
+                background-color: aliceblue;
+                color: cadetblue;
+                height: 30px;
+                padding: 10px;
+                
+            }
+            #tab_buap th, #tab_buap td{
+                border-width: 3px;
+                border-color: palevioletred;
+                border-style: solid;
+                
+            
+            }
+            #tab_libros{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+              
+            }
+            #tab_libros th{
+                height: 50px;
+                background-color: saddlebrown;
+                color: bisque;
+                
+            }
+            #tab_libros tbody tr:nth-child(even){
+                background-color: sandybrown;
+                color: saddlebrown;
+            }
+            #tab_libros tbody tr:nth-child(odd){
+                background-color: bisque;
+                color: saddlebrown;
+            }
+            #tab_libros tfoot tr{
+                background-color: brown;
+                color: bisque;
+            }
+            #tab_libros td{
+                height: 20px;
+                padding: 10px;
+            }
+            #tab_pelis{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                /*Esta variable separa las seldas de la tabala border-spacing: 10px;*/
+                border-collapse: collapse;
+                background-color: burlywood;
+                
+            }
+            #tab_pelis th{
+                background-color: saddlebrown;
+                color: bisque;
+                height: 50px;
+                padding: 10px;
+                
+            }
+            #tab_pelis, #tab_pelis th, #tab_pelis td{
+                border-width: 3px;
+                border-style: solid;
+                border-color: rosybrown;
+            }
+            #tab_pelis td{
+                height: 30px;
+                padding: 20px; 
+            }
+            #tab_pelis tbody tr:hover{
+                background-color: yellow;
+            }
+           /* #tab_pelis tbody tr td:hover{
+                background-color: yellow;*/
+            }
+            #tab_series{
+                width: 1500px;
+                border-collapse: collapse;
+                background-color: burlywood;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+            #tab_series th, #tab_series td{
+                border: 1px solid brown; 
+                padding: 10px;
+                
+            }
+            #tab_series th{
+                background-color: darkgoldenrod;
+                color: saddlebrown;
+            }
+            #tab_series td{
+                background-color: burlywood;
+            }
+        </style>
+        
+    </head> 
+    <body>
+        <header>
+          <div> <a href="index.html"><img style="width: 32px; aling:center" src="Images/hogar.png"></a></div>
+           <h1>TABLAS</h1>
+        </header>
+    <nav>
+         <ul>
+               <li><a href="Trejo%20Bautista%20Tamara-%20Formatos%20de%20texto.html">Formatos</a></li>
+               <li><a href="Listas.html">Listas</a></li>
+               <li><a href="enlaces.html">Enlaces</a></li>
+               <li><a href="Tablas.html">Tablas</a></li>
+               <li><a href="Imagenes.html">Imagenes</a></li>
+               <li><a href="Audios.html">Audios</a></li>
+               <li><a href="Videos.html">Video</a></li>
+               <li><a href="Formularios.html">Formulario</a></li>
+           </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Tabla simple</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut ante purus. Sed dignissim tortor vitae consectetur lobortis. Curabitur sagittis ac ipsum at accumsan. Nulla facilisi. Nunc fermentum risus semper varius fringilla. Sed ultricies nulla et quam pharetra, nec semper ipsum dapibus. Nunc congue, ipsum sit amet consequat sollicitudin, nunc elit condimentum dui, in lacinia metus mi in sapien. Praesent purus nisl, hendrerit non lacus sit amet, accumsan pellentesque leo. Etiam id elementum ex. Sed a nulla nec mauris cursus sodales. Suspendisse interdum elit ipsum, vel rutrum mi sodales at. Curabitur nulla odio, condimentum et erat et, aliquet mollis magna. Integer enim justo, fermentum et ex id, viverra laoreet nisl. Aenean lobortis lacus vel nulla fringilla, sodales ultrices odio cursus.</p>
+            <table id="tab_buap" border="1">
+                <thead>
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Nombre</th>
+                        <th>Facultad</th>
+                        <th>Celular</th>
+                        <th>E-MAIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>202163406</td>
+                        <td>Tamara Trejo Bautista</td>
+                        <td>Contaduria</td>
+                        <td>2223084188</td>
+                        <td>tammyter.ba02@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>202164409</td>
+                        <td>Karla Bautista Vazquez</td>
+                        <td>Diseno</td>
+                        <td>2236579214</td>
+                        <td>Karla.trejo@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>202164506</td>
+                        <td>Diana Bautista Torres</td>
+                        <td>Quimica</td>
+                        <td>223656318</td>
+                        <td>Diana.torres@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>202154809</td>
+                        <td>Carlos Eduardo Castro</td>
+                        <td>Ingenieria</td>
+                        <td>2631599214</td>
+                        <td>Carlos.castrotrejo@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>202176199</td>
+                        <td>Renata Gomez Lopez</td>
+                        <td>Artes</td>
+                        <td>2684229921</td>
+                        <td>Renata.Gomez@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>202177846</td>
+                        <td>Maria Nava Lozano</td>
+                        <td>Artes</td>
+                        <td>2684231591</td>
+                        <td>Maria.Nava@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Tabla zebra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia eros vel vehicula semper. Mauris scelerisque odio et tincidunt congue. Phasellus consectetur faucibus diam, nec tristique leo varius ac. Fusce faucibus luctus auctor. Integer molestie neque ex, non faucibus diam malesuada vitae. Maecenas ullamcorper lacus eu mauris vehicula mollis. Nulla facilisi. Praesent vel purus id mi vehicula suscipit. Nulla facilisi. Ut congue, nibh vitae luctus mattis, ipsum orci mattis ex, sit amet posuere metus sem id lorem. Class aptent taciti.</p>
+            <table id="tab_libros" border="1">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Editorial</th>
+                        <th>Ano</th>
+                        <th>Precio</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td>Azul del cielo</td>
+                        <td>Julieta Rojas</td>
+                        <td>Barco de vapor</td>
+                        <td>2005</td>
+                        <td>$456</td>
+                    </tr>
+                    <tr>
+                        <td>Entre las armas y la palabra</td>
+                        <td>Maria Zans</td>
+                        <td>Oceano</td>
+                        <td>2011</td>
+                        <td>$456</td>
+                    </tr>
+                    <tr>
+                        <td>Amor en tiempos de colera</td>
+                        <td>Pedro Romero</td>
+                        <td>Alias</td>
+                        <td>2008</td>
+                        <td>$230</td>
+                    </tr>
+                    <tr>
+                        <td>Azul del cielo</td>
+                        <td>Julieta Rojas</td>
+                        <td>Barco de vapor</td>
+                        <td>2009</td>
+                        <td>$489</td>
+                    </tr>
+                    <tr>
+                        <td>Poemario Rojo</td>
+                        <td>Maria N</td>
+                        <td>Oceano</td>
+                        <td>207</td>
+                        <td>$340</td>
+                    </tr>
+                    <tr>
+                        <td>Vuelo de la mariposa</td>
+                        <td>Omar Perez</td>
+                        <td>Barco de papel</td>
+                        <td>2005</td>
+                        <td>$105</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>TOLAL</td>
+                    <td>$2,076</td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2 >Tabla hoover</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan mauris eget magna tristique, vitae vulputate ante ultrices. Pellentesque risus tellus, consectetur in leo id, laoreet vulputate dui. Duis ut urna vitae diam rutrum cursus ut et est. Aliquam euismod laoreet diam, vitae imperdiet sem lobortis in. Pellentesque et gravida tellus, in pharetra felis. Fusce turpis libero, consectetur vitae nulla sed, facilisis euismod leo. Nunc nec elit sed dui posuere tempus vel vel est. Aenean magna eros, pulvinar eget lobortis at, rutrum vitae odio. Mauris venenatis fermentum justo, eu dictum libero fermentum id. Nulla ultricies odio eget nisi tincidunt, et.</p>
+            <table id="tab_pelis">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Duracion</th>
+                        <th>Ano</th>
+                        <th>Genero</th>
+                    </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td>El padrino</td>
+                        <td>Dir. Francis Ford Coppola</td>
+                        <td>175 min</td>
+                        <td>1972</td>
+                        <td>Ficcion</td>
+                    </tr>
+                    <tr>
+                        <td>Odisea en el espacio</td>
+                        <td>Dir. Stanley Kubrick</td>
+                        <td>180 min</td>
+                        <td>1968</td>
+                        <td>Ciencia Ficcion</td>
+                    </tr>
+                    <tr>
+                        <td>Sueño de fuga</td>
+                        <td>Dir. Frank Darabont</td>
+                        <td>142 min</td>
+                        <td>1994</td>
+                        <td>FNovela</td>
+                    </tr>
+                    <tr>
+                        <td>El ciudadano Kane</td>
+                        <td>Dir. Orson Welles</td>
+                        <td>119 min</td>
+                        <td>1941</td>
+                        <td>Drama</td>
+                    </tr>
+                    <tr>
+                        <td>Buenos muchachos</td>
+                        <td>Dir. Martin Scorsese</td>
+                        <td>145 min</td>
+                        <td>1990</td>
+                        <td>Drama criminal</td>
+                    </tr>
+                    <tr>
+                        <td>Los olvidados </td>
+                        <td>Dir. Luis Bunuel</td>
+                        <td>85 min</td>
+                        <td>1950</td>
+                        <td>Ficción</td>
+                    </tr>
+                    <tr>
+                        <td>Amores perros </td>
+                        <td>Dir. Alejandro González Inárritu</td>
+                        <td>154 min</td>
+                        <td>2000</td>
+                        <td>Drama</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </section>
+        <section style="overflow: auto;">
+            <h2 >Tabla overflowr</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan mauris eget magna tristique, vitae vulputate ante ultrices. Pellentesque risus tellus, consectetur in leo id, laoreet vulputate dui. Duis ut urna vitae diam rutrum cursus ut et est. Aliquam euismod laoreet diam, vitae imperdiet sem lobortis in. Pellentesque et gravida tellus, in pharetra felis. Fusce turpis libero, consectetur vitae nulla sed, facilisis euismod leo. Nunc nec elit sed dui posuere tempus vel vel est. Aenean magna eros, pulvinar eget lobortis at, rutrum vitae odio. Mauris venenatis fermentum justo, eu dictum libero fermentum id. Nulla ultricies odio eget nisi tincidunt, et.</p>
+            <table id="tab_series">
+                <thead>
+                    <tr>
+                        <th>Serie</th>
+                         <th>Ano</th>
+                         <th>Genero</th>
+                         <th>Creador</th>
+                         <th colspan="2">Pais</th>
+                         <th>Temporadas</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The foster</td>
+                         <td>2011</td>
+                         <td>Drama</td>
+                         <td>Alicia T</td>
+                         <td>EE.UU</td>
+                        <td></td>
+                         <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>The foster</td>
+                         <td>2011</td>
+                         <td>Drama</td>
+                        <td>Jose p</td>
+                         <td>Mexico</td>
+                         <td>Zuecia</td>
+                         <td>4</td>
+                    </tr>
+                     <tr>
+                        <td>Madre solo hay dos</td>
+                         <td>2020</td>
+                         <td>Romance</td>
+                         <td>Joselin L</td>
+                         <td></td>
+                         <td>Mexico</td>
+                         <td>3</td>
+                    </tr>
+                     <tr>
+                        <td>The office</td>
+                         <td>2014</td>
+                         <td>Comedia</td>
+                         <td>Manuel J</td>
+                         <td>Canada</td>
+                         <td></td>
+                         <td>8</td>
+                    </tr>
+                     <tr>
+                        <td>Club de cuervos</td>
+                         <td>2015</td>
+                         <td>Comedia</td>
+                         <td>Aranza E</td>
+                         <td></td>
+                         <td>Mexico</td>
+                         <td>1</td>
+                    </tr>
+                     <tr>
+                        <td>La casa de las flores</td>
+                         <td>2011</td>
+                         <td>Drama</td>
+                         <td>Maria N</td>
+                         <td>Mexico</td>
+                         <td></td>
+                         <td>3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                
+                </tfoot>
+            </table>
+        </section>
+            
+    </main>
+    <footer>
+    
+    </footer>
+        <h6>Elaborado por Trejo Bautista Tamara</h6>
+    </body>
+    </html>
